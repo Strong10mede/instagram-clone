@@ -225,14 +225,16 @@ function App() {
         )}
       </div>
 
-      {posts.map(({ id, post }) => (
-        <Post
-          key={id} //with the help of key react will know which post is added or changed and will only render that post
-          username={post.username}
-          caption={post.caption}
-          imageUrl={post.imageUrl}
-        />
-      ))}
+      <div className="app__posts">
+        {posts.map(({ id, post }) => (
+          <Post
+            key={id} //with the help of key react will know which post is added or changed and will only render that post
+            username={post.username}
+            caption={post.caption}
+            imageUrl={post.imageUrl}
+          />
+        ))}
+      </div>
     </div>
   );
 }
