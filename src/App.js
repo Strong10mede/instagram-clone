@@ -212,7 +212,7 @@ function App() {
         <img
           className="app__headerImage"
           src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png"
-          height="30"
+          width="75"
           alt=""
         />
         {user ? (
