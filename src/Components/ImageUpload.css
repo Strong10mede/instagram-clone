@@ -9,3 +9,7 @@
   background-color: white;
   padding: 20px;
 }
+
+.imageupload__progress {
+  width: 100%;
+}
