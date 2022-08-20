@@ -87,7 +87,6 @@ function App() {
           }))
         );
       });
-    console.log(posts);
   }, []);
 
   const signUp = (e) => {
