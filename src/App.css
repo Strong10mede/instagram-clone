@@ -10,6 +10,7 @@
 .app__posts {
   padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
