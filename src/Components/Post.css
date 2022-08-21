@@ -31,3 +31,51 @@
 .post__avatar {
   margin-right: 0.75rem;
 }
+
+.post__username {
+  cursor: pointer;
+  flex: 1;
+}
+
+.post__commentBox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.post__comments {
+  padding: 20px;
+  margin-top: -20px;
+  margin-bottom: 5px;
+  /* word-break: break-all; */
+}
+
+.post__comment {
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.post__comment > strong {
+  cursor: pointer;
+}
+
+input,
+textarea,
+.post__input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.post__button {
+  flex: 0;
+  border: none;
+  color: #6082a3;
+  background-color: transparent;
+  border-top: 1px solid lightgray;
+  padding: 20px;
+}

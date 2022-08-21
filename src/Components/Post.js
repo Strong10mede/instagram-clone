@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { db } from "../firebase";
+import firebase from "firebase";
 import "./Post.css";
+import { TextField } from "@mui/material";
 import { Avatar } from "@mui/material";
-function Post({ caption, imageUrl, username, postId }) {
+function Post({ caption, user, imageUrl, username, postId }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState([]);
 
@@ -23,6 +26,15 @@ function Post({ caption, imageUrl, username, postId }) {
       unsubscribe();
     };
   }, [postId]);
+  const postComment = (event) => {
+    event.preventDefault();
+    db.collection("posts").doc(postId).collection("comments").add({
+      text: comment,
+      username: user.displayName,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+    setComment("");
+  };
   return (
     <div className="post">
       <div className="post__header">
@@ -37,6 +49,57 @@ function Post({ caption, imageUrl, username, postId }) {
       <h4 className="post__text">
         <strong>{username}</strong>:{caption}
       </h4>
+
+      <div className="post__comments">
+        {comments.map((comment) => (
+          <div className="comment_container">
+            <p className="post__comment breakfix">
+              <Linkify componentDecorator={componentDecorator}>
+                <strong onClick={viewtheirstuff.bind(this, comment.username)}>
+                  {comment.username}:
+                </strong>{" "}
+                {comment.text}
+              </Linkify>
+            </p>
+            <div className="delete__CommentButton">
+              {((user && comment.username === auth.currentUser.displayName) ||
+                (user && auth.currentUser.email === "admin@gmail.com")) && (
+                <div className="comment__morevert">
+                  {/* This is where the 3 dots menu appear to delete comments */}
+                  <MenuPopupState
+                    lang={lang}
+                    datatopass={comment.timestamp}
+                    functiontopass={deleteComment}
+                    labeltopass={
+                      lang ? "Effacez ce commentaire" : "Delete this comment"
+                    }
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+      {user && ( // Only display this comment form input if the user has logged in
+        <form className="post__commentBox">
+          <TextField
+            className="post__input"
+            type="text"
+            placeholder={"Add a comment"}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+          />
+
+          <button
+            className="post__button"
+            disable={!comment}
+            type="submit"
+            onClick={postComment}
+          >
+            {"Post"}
+          </button>
+        </form>
+      )}
     </div>
   );
 }

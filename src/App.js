@@ -8,6 +8,7 @@ import Modal from "@mui/material/Modal";
 import { Input } from "@mui/material";
 import ImageUpload from "./Components/ImageUpload";
 import InstagramEmbed from "react-instagram-embed";
+
 // function backToTop() {
 //   document.body.scrollTop = 0; //for Safari
 //   document.documentElement.scrollTop = 0; //for Chrome, Firefox, IE and Opera
@@ -226,6 +227,8 @@ function App() {
             <Post
               key={id} //with the help of key react will know which post is added or changed and will only render that post
               username={post.username}
+              postId={id}
+              user={user}
               caption={post.caption}
               imageUrl={post.imageUrl}
             />
@@ -233,8 +236,8 @@ function App() {
         </div>
         <div className="app__postsRight">
           <InstagramEmbed
-            url="https://instagr.am/p/Zw9o4/"
-            clientAccessToken="123|456"
+            className="floating"
+            url="https://www.instagram.com/p/CcXzrLLsn9W/?utm_source=ig_web_copy_link"
             maxWidth={320}
             hideCaption={false}
             containerTagName="div"
