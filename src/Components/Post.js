@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Post.css";
 import { Avatar } from "@mui/material";
-function Post({ caption, imageUrl, username }) {
+function Post({ caption, imageUrl, username, postId }) {
+  const [comments, setComments] = useState([]);
+  const [comment, setComment] = useState([]);
+
+  // What follows is for comments under a post, when a change is made, it refreshes
+  useEffect(() => {
+    let unsubscribe;
+    if (postId) {
+      unsubscribe = db
+        .collection("posts")
+        .doc(postId)
+        .collection("comments")
+        .orderBy("timestamp", "asc")
+        .onSnapshot((snapshot) => {
+          setComments(snapshot.docs.map((doc) => doc.data()));
+        });
+    }
+
+    return () => {
+      unsubscribe();
+    };
+  }, [postId]);
   return (
     <div className="post">
       <div className="post__header">
