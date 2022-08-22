@@ -22,7 +22,9 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  maxWidth: "600px",
+  width: "50%",
+  minWidth: "200px",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -130,20 +132,30 @@ function App() {
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
+                className="signup__input"
               />
               <Input
                 placeholder="email"
                 type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className="signup__input"
               />
               <Input
                 placeholder="password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                className="signup__input"
               />
-              <Button onClick={signUp}>Sign Up</Button>
+              <Button
+                onClick={signUp}
+                type="submit"
+                variant="contained"
+                color="secondary"
+              >
+                Sign Up
+              </Button>
             </center>
           </form>
         </Box>
@@ -169,20 +181,30 @@ function App() {
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
+                className="signup__input"
               />
               <Input
                 placeholder="email"
                 type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className="signup__input"
               />
               <Input
                 placeholder="password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                className="signup__input"
               />
-              <Button onClick={signIn}>Sign In</Button>
+              <Button
+                onClick={signIn}
+                variant="contained"
+                color="secondary"
+                type="submit"
+              >
+                Sign In
+              </Button>
             </center>
           </form>
         </Box>
