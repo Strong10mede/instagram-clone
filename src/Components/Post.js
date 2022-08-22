@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { db, auth, storage } from "../firebase";
 import firebase from "firebase";
 import "./Post.css";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { TextField } from "@mui/material/";
 import { Avatar } from "@mui/material";
 function Post({ caption, user, imageUrl, username, postId }) {
@@ -44,6 +45,9 @@ function Post({ caption, user, imageUrl, username, postId }) {
           src="/static/images/avatar/1.jpg"
         />
         <h3>{username}</h3>
+        <div className="MoreHorizIcon">
+          <MoreHorizIcon />
+        </div>
       </div>
 
       <img className="post__image" alt="" src={imageUrl} />
