@@ -7,7 +7,10 @@ import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import { Input } from "@mui/material";
 import ImageUpload from "./Components/ImageUpload";
-import InstagramEmbed from "react-instagram-embed";
+import HomeIcon from "@mui/icons-material/Home";
+import NearMeOutlinedIcon from "@mui/icons-material/NearMeOutlined";
+import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 // function backToTop() {
 //   document.body.scrollTop = 0; //for Safari
@@ -26,22 +29,6 @@ const style = {
   p: 4,
 };
 
-const Spinner = () => (
-  <div className="post loading">
-    <img alt="Loading..." src="https://i.gifer.com/ZZ5H.gif" width="20" />
-    <h5>Loading...</h5>
-  </div>
-);
-
-//determine language from the user's computer or browser
-// const locale = () => {
-//   if (getUserLocale().includes("fr")) {
-//     return true;
-//   }
-//   else
-//     return false;
-// }
-
 function App() {
   const [posts, setPosts] = useState([]);
   const [open, setOpen] = useState(false);
@@ -51,10 +38,7 @@ function App() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [user, setUser] = useState(null);
-  const [viewMine, setViewMine] = useState(false);
-  const [viewWnichUser, setViewWhichUser] = useState("");
-  const [viewSinglePost, setViewSinglePost] = useState(false);
-  const [singlePostId, setSinglePostId] = useState("");
+
   // const [lang, setLang] = useState(locale);
 
   // this to to toggle from FR to EN
@@ -211,14 +195,43 @@ function App() {
           width="75"
           alt=""
         />
-        {user ? (
-          <Button onClick={() => auth.signOut()}>Log Out</Button>
-        ) : (
-          <div className="app__loginContainer">
-            <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
-            <Button onClick={() => setOpen(true)}>Sign Up</Button>
-          </div>
-        )}
+        <div className="header_icons">
+          <HomeIcon fontSize="large" className="header_icon" />
+          <NearMeOutlinedIcon fontSize="large" className="header_icon" />
+          <ExploreOutlinedIcon fontSize="large" className="header_icon" />
+          <FavoriteBorderOutlinedIcon
+            fontSize="large"
+            className="header_icon"
+          />
+        </div>
+        <div className="signupButton">
+          {user ? (
+            <Button
+              onClick={() => auth.signOut()}
+              variant="contained"
+              color="secondary"
+              className="signOutButton"
+            >
+              Logout
+            </Button>
+          ) : (
+            <div className="app__loginContainer">
+              <Button
+                onClick={() => setOpenSignIn(true)}
+                className="signInButton"
+              >
+                Sign In
+              </Button>
+              <Button
+                onClick={() => setOpen(true)}
+                variant="contained"
+                color="secondary"
+              >
+                Sign Up
+              </Button>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="app__posts">
@@ -234,21 +247,7 @@ function App() {
             />
           ))}
         </div>
-        <div className="app__postsRight">
-          <InstagramEmbed
-            className="floating"
-            url="https://www.instagram.com/p/CcXzrLLsn9W/?utm_source=ig_web_copy_link"
-            maxWidth={320}
-            hideCaption={false}
-            containerTagName="div"
-            protocol=""
-            injectScript
-            onLoading={() => {}}
-            onSuccess={() => {}}
-            onAfterRender={() => {}}
-            onFailure={() => {}}
-          />
-        </div>
+        <div className="app__postsRight"></div>
       </div>
       {user?.displayName ? (
         <ImageUpload username={user.displayName} />

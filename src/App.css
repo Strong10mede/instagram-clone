@@ -17,12 +17,6 @@
   margin-left: 20px;
 }
 
-.floating {
-  position: absolute;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .app__header {
   background-color: white;
   padding: 20px;
@@ -55,6 +49,29 @@
 .app__signin {
   display: flex;
   flex-direction: column !important;
+}
+
+.header_icons {
+  position: absolute;
+  right: 19%;
+}
+
+.header_icon:first-child {
+  color: #e41c47;
+}
+
+.header_icon {
+  margin-right: 10px;
+  color: #252222;
+}
+
+.header_icon:hover {
+  color: #e41c47;
+}
+
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: #f50057;
 }
 
 footer {
@@ -132,6 +149,10 @@ footer h4 {
 
 @media (max-width: 768px) {
   .no-mobile {
+    display: none;
+  }
+
+  .header_icons {
     display: none;
   }
 

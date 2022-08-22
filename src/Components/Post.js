@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../firebase";
+import { db, auth, storage } from "../firebase";
 import firebase from "firebase";
 import "./Post.css";
-import { TextField } from "@mui/material";
+import { TextField } from "@mui/material/";
 import { Avatar } from "@mui/material";
 function Post({ caption, user, imageUrl, username, postId }) {
   const [comments, setComments] = useState([]);
@@ -53,30 +53,9 @@ function Post({ caption, user, imageUrl, username, postId }) {
       <div className="post__comments">
         {comments.map((comment) => (
           <div className="comment_container">
-            <p className="post__comment breakfix">
-              <Linkify componentDecorator={componentDecorator}>
-                <strong onClick={viewtheirstuff.bind(this, comment.username)}>
-                  {comment.username}:
-                </strong>{" "}
-                {comment.text}
-              </Linkify>
+            <p className="post__comment ">
+              <strong> {comment.username}:</strong> {comment.text}
             </p>
-            <div className="delete__CommentButton">
-              {((user && comment.username === auth.currentUser.displayName) ||
-                (user && auth.currentUser.email === "admin@gmail.com")) && (
-                <div className="comment__morevert">
-                  {/* This is where the 3 dots menu appear to delete comments */}
-                  <MenuPopupState
-                    lang={lang}
-                    datatopass={comment.timestamp}
-                    functiontopass={deleteComment}
-                    labeltopass={
-                      lang ? "Effacez ce commentaire" : "Delete this comment"
-                    }
-                  />
-                </div>
-              )}
-            </div>
           </div>
         ))}
       </div>
@@ -96,7 +75,7 @@ function Post({ caption, user, imageUrl, username, postId }) {
             type="submit"
             onClick={postComment}
           >
-            {"Post"}
+            Post
           </button>
         </form>
       )}
