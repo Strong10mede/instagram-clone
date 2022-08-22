@@ -27,6 +27,11 @@
   align-items: center;
 }
 
+.MoreHorizIcon {
+  position: absolute;
+  left: 47%;
+}
+
 .post__avatar {
   margin-right: 0.75rem;
 }
