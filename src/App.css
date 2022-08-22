@@ -68,7 +68,7 @@ input {
 }
 
 .header_icons {
-  position: absolute;
+  /* position: absolute; */
   right: 19%;
 }
 
@@ -106,6 +106,10 @@ input {
 .signInLabel {
   display: flex;
   align-items: center;
+}
+
+.signInButton {
+  margin-right: 0.5rem !important;
 }
 
 footer {
