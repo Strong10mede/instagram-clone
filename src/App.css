@@ -52,6 +52,7 @@ input {
 .app__signup {
   display: flex;
   flex-direction: column !important;
+  row-gap: 0.75rem;
 }
 
 .signup__input::placeholder {
@@ -63,6 +64,7 @@ input {
 .app__signin {
   display: flex;
   flex-direction: column !important;
+  row-gap: 0.75rem;
 }
 
 .header_icons {
@@ -86,6 +88,23 @@ input {
 .MuiButton-containedSecondary {
   color: #fff;
   background-color: #f50057 !important;
+}
+
+.signInLabelImg {
+  width: 70px;
+}
+
+.signInLabelText {
+  font-size: 11px;
+  text-align: justify;
+  line-height: 0.7rem;
+  letter-spacing: 0.01rem;
+  width: 95%;
+}
+
+.signInLabel {
+  display: flex;
+  align-items: center;
 }
 
 footer {
