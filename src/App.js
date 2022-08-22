@@ -156,6 +156,18 @@ function App() {
               >
                 Sign Up
               </Button>
+              <div className="signInLabel">
+                <img
+                  className="modal__headerImage signInLabelImg"
+                  src="https://i.pinimg.com/originals/8a/77/05/8a770507298d728a1e3e039a0507dd8e.png"
+                  alt="instagram"
+                />
+                <p className="signInLabelText">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  Sed ut perspiciatis unde omnis iste natus error ut
+                  perspiciatis unde omnis iste natus error{" "}
+                </p>
+              </div>
             </center>
           </form>
         </Box>
