@@ -22,14 +22,19 @@
 }
 
 .post__header {
+  position: relative;
   display: flex;
   padding: 1.25rem;
   align-items: center;
 }
 
+.post__header h3 {
+  margin-left: 0.5rem;
+}
+
 .MoreHorizIcon {
   position: absolute;
-  left: 47%;
+  right: 4%;
 }
 
 .post__avatar {
