@@ -23,7 +23,6 @@
 
 .post__header {
   display: flex;
-  justify-content: space-between;
   padding: 1.25rem;
   align-items: center;
 }
