@@ -2,6 +2,14 @@
   margin: 0;
 }
 
+input {
+  width: 160px;
+  padding: 6px 20px;
+  background: #faf9f9;
+  border: 0.5px solid #b4afaf;
+  border-radius: 3%;
+}
+
 .app {
   background-color: #fafafa;
 }
@@ -46,6 +54,12 @@
   flex-direction: column !important;
 }
 
+.signup__input::placeholder {
+  text-align: left !important;
+  font-size: 17px !important;
+  letter-spacing: 0.1rem;
+}
+
 .app__signin {
   display: flex;
   flex-direction: column !important;
@@ -71,7 +85,7 @@
 
 .MuiButton-containedSecondary {
   color: #fff;
-  background-color: #f50057;
+  background-color: #f50057 !important;
 }
 
 footer {
