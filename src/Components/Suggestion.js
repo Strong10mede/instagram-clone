@@ -14,7 +14,7 @@ function Suggestion() {
         error sit voluptatem{" "}
       </p>
 
-      <div className="footer">
+      <div className="suggestion__Sfooter">
         <Avatar
           className="suggestion__avatar"
           alt="Bhuban_Bam"
