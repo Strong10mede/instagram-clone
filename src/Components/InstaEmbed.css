@@ -20,24 +20,55 @@
   border-bottom: 1px solid lightgray;
 }
 
-.embedText {
+.instaEmbed__text {
   padding: 10px;
   padding-left: 12px;
   padding-right: 15px;
 }
 
-.embedText h4 {
+.instaEmbed__text h4 {
   margin-bottom: 7px;
 }
 
-.embedText p {
+.instaEmbed__text p {
   font-size: 14.3px;
   text-align: justify;
   letter-spacing: 0.03rem;
   line-height: 1.17rem;
 }
 
-.embedText ul {
+.instaEmbed__text ul {
   margin-top: 7px;
   font-size: 14px;
+}
+
+.instaEmbed__footer {
+  display: flex;
+  padding-left: 22px;
+}
+
+.instaEmbed__footerContent {
+  /* position: absolute; */
+  margin-left: 20px;
+}
+
+.instaEmbed__footerCopyright {
+  color: #1b1a1a;
+  font-weight: 700;
+  margin: auto;
+  padding: 5px;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.instaEmbed__footerCopyrightIcon {
+  margin-right: 2px;
+}
+
+a {
+  text-decoration: none;
 }

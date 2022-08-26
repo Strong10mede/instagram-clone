@@ -1,6 +1,7 @@
 import React from "react";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import { Avatar, Button } from "@mui/material";
+import "./InstaEmbed.css";
 function InstaEmbed() {
   return (
     <div className="instaEmbed">
@@ -38,10 +39,10 @@ function InstaEmbed() {
           !!!
         </h4>
       </div>
-      <div className="footer">
+      <div className="instaEmbed__footer">
         <Avatar className="avatar" alt="mayur" src="/images/avatar.jpg" />
 
-        <div className="footer_content">
+        <div className="instaEmbed__footerContent">
           <h5>Mayur Kumar</h5>
           <a href="https://www.instagram.com/_the.odist_/">
             <Button
@@ -54,8 +55,11 @@ function InstaEmbed() {
           </a>
         </div>
       </div>
-      <div className="copyright">
-        <CopyrightIcon fontSize="small" className="copyright_icon" />
+      <div className="instaEmbed__footerCopyright">
+        <CopyrightIcon
+          fontSize="small"
+          className="instaEmbed__footerCopyrightIcon"
+        />
         2022 INSTAGRAM-CLONE BY MAYUR KUMAR
       </div>
     </div>
