@@ -20,6 +20,7 @@
 
 .suggestion h4 {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-transform: uppercase;
   font-size: 17px;
@@ -28,12 +29,11 @@
   margin-bottom: 8px;
 }
 
-.suggesticon__icon {
-  margin-right: 5px;
+.suggestion__icon {
+  margin-right: 10px;
 }
 
 .suggestion p {
-  width: 85%;
   font-size: 13px;
   margin-top: 5px;
 }
