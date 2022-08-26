@@ -16,7 +16,7 @@ input {
 
 .app__posts {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 .app__postsLeft {
   padding: 20px;
