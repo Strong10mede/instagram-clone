@@ -146,16 +146,17 @@ function Suggestion() {
           </Button>
         </a>
       </div>
-
-      <a href="https://www.instagram.com/">
-        <Button
-          size="small"
-          color="primary"
-          className="suggestion__footerFollowMain"
-        >
-          See All
-        </Button>
-      </a>
+      <center style={{ marginTop: "5px" }}>
+        <a href="https://www.instagram.com/">
+          <Button
+            size="small"
+            color="primary"
+            className="suggestion__footerFollowMain"
+          >
+            See All
+          </Button>
+        </a>
+      </center>
     </div>
   );
 }
