@@ -12,6 +12,7 @@ import NearMeOutlinedIcon from "@mui/icons-material/NearMeOutlined";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import InstaEmbed from "./Components/InstaEmbed";
+import Suggestion from "./Components/Suggestion";
 
 // function backToTop() {
 //   document.body.scrollTop = 0; //for Safari
@@ -283,6 +284,9 @@ function App() {
 
       <div className="app__posts">
         <div className="app__postsLeft">
+          <Suggestion />
+        </div>
+        <div className="app__postsCenter">
           {posts.map(({ id, post }) => (
             <Post
               key={id} //with the help of key react will know which post is added or changed and will only render that post
