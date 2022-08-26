@@ -47,7 +47,7 @@ function InstaEmbed() {
         />
 
         <div className="instaEmbed__footerContent">
-          <h5>Mayur Kumar</h5>
+          <h5 style={{ marginBottom: "5px" }}>Mayur Kumar</h5>
           <a href="https://www.instagram.com/mede_mayur/">
             <Button
               variant="contained"
