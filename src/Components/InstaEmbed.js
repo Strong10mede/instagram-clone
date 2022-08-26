@@ -30,6 +30,24 @@ function InstaEmbed() {
           <br />
         </p>
         <h4>Hope you have a great time, exploring the application in and out ✌ !!!</h4>
+          </div>
+          <div className="footer">
+        <Avatar
+          className="avatar"
+          alt="mayur"
+          src="/images/avatar.jpg"
+          
+        />
+
+        <div className="footer_content" >
+            <h5>Mayur Kumar</h5>
+            <a href="https://www.instagram.com/_the.odist_/"><Button variant="contained" color="secondary" className="footer_follow" >Follow</Button></a>
+        </div>
+
+        
+      </div>
+      <div className="copyright">
+            <CopyrightIcon fontSize="small" className="copyright_icon" />2022 INSTAGRAM-CLONE BY MAYUR KUMAR 
       </div>
 
       </div>
