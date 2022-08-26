@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import { Avatar, Button } from "@mui/material";
 function InstaEmbed() {
@@ -10,14 +10,18 @@ function InstaEmbed() {
         alt=""
       />
       <div className="instaEmbed__text">
-              <h4>Hello peeps 🙋</h4>
-              <h4>Welcome to Instagram Clone App ⚡ !!!</h4>
+        <h4>Hello peeps 🙋</h4>
+        <h4>Welcome to Instagram Clone App ⚡ !!!</h4>
 
         <p>
-          Instagram is an American photo and video sharing social networking service owned by Facebook. This project is a Clone of the original Instagram UI. This Project provides some basic features, similar to the original application.
+          Instagram is an American photo and video sharing social networking
+          service owned by Facebook. This project is a Clone of the original
+          Instagram UI. This Project provides some basic features, similar to
+          the original application.
           <br />
           <br />
-          <b>P.S.</b> This project has been developed for learning purposes, and it has nothing to do with the original Application.
+          <b>P.S.</b> This project has been developed for learning purposes, and
+          it has nothing to do with the original Application.
           <br />
           <br />
           <b>Features : </b>
@@ -29,30 +33,33 @@ function InstaEmbed() {
           </ul>
           <br />
         </p>
-        <h4>Hope you have a great time, exploring the application in and out ✌ !!!</h4>
-          </div>
-          <div className="footer">
-        <Avatar
-          className="avatar"
-          alt="mayur"
-          src="/images/avatar.jpg"
-          
-        />
+        <h4>
+          Hope you have a great time, exploring the application in and out ✌
+          !!!
+        </h4>
+      </div>
+      <div className="footer">
+        <Avatar className="avatar" alt="mayur" src="/images/avatar.jpg" />
 
-        <div className="footer_content" >
-            <h5>Mayur Kumar</h5>
-            <a href="https://www.instagram.com/_the.odist_/"><Button variant="contained" color="secondary" className="footer_follow" >Follow</Button></a>
+        <div className="footer_content">
+          <h5>Mayur Kumar</h5>
+          <a href="https://www.instagram.com/_the.odist_/">
+            <Button
+              variant="contained"
+              color="secondary"
+              className="footer_follow"
+            >
+              Follow
+            </Button>
+          </a>
         </div>
-
-        
       </div>
       <div className="copyright">
-            <CopyrightIcon fontSize="small" className="copyright_icon" />2022 INSTAGRAM-CLONE BY MAYUR KUMAR 
-      </div>
-
+        <CopyrightIcon fontSize="small" className="copyright_icon" />
+        2022 INSTAGRAM-CLONE BY MAYUR KUMAR
       </div>
     </div>
   );
 }
 
-export default InstaEmbed
+export default InstaEmbed;

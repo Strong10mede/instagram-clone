@@ -1,0 +1,43 @@
+.instaEmbed {
+  max-width: 380px;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  left: 2%;
+  position: absolute;
+}
+
+.instaEmbed__image {
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.embedText {
+  padding: 10px;
+  padding-left: 12px;
+  padding-right: 15px;
+}
+
+.embedText h4 {
+  margin-bottom: 7px;
+}
+
+.embedText p {
+  font-size: 14.3px;
+  text-align: justify;
+  letter-spacing: 0.03rem;
+  line-height: 1.17rem;
+}
+
+.embedText ul {
+  margin-top: 7px;
+  font-size: 14px;
+}

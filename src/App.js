@@ -11,6 +11,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import NearMeOutlinedIcon from "@mui/icons-material/NearMeOutlined";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import InstaEmbed from "./Components/InstaEmbed";
 
 // function backToTop() {
 //   document.body.scrollTop = 0; //for Safari
@@ -293,7 +294,9 @@ function App() {
             />
           ))}
         </div>
-        <div className="app__postsRight"></div>
+        <div className="app__postsRight">
+          <InstaEmbed />
+        </div>
       </div>
       {user?.displayName ? (
         <ImageUpload username={user.displayName} />
