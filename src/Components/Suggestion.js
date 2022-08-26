@@ -24,12 +24,14 @@ function Suggestion() {
         <div className="suggestion__footerContent">
           <h5>bbkivines_</h5>
         </div>
-        <a href="https://www.instagram.com/bbkivines_/">
+        <a
+          href="https://www.instagram.com/bbkivines_/"
+          className="suggestion__footerFollow"
+        >
           <Button
             size="small"
             //   variant="contained"
             color="secondary"
-            className="suggestion__footerFollow"
           >
             Follow
           </Button>
@@ -46,12 +48,14 @@ function Suggestion() {
         <div className="suggestion__footerContent">
           <h5>sahidkapoor4</h5>
         </div>
-        <a href="https://www.instagram.com/sahidkapoor4/">
+        <a
+          href="https://www.instagram.com/sahidkapoor4/"
+          className="suggestion__footerFollow"
+        >
           <Button
             size="small"
             //   variant="contained"
             color="secondary"
-            className="suggestion__footerFollow"
           >
             Follow
           </Button>
@@ -69,12 +73,14 @@ function Suggestion() {
         <div className="suggestion__footerContent">
           <h5>shirleysetia</h5>
         </div>
-        <a href="https://www.instagram.com/shirleysetia/">
+        <a
+          href="https://www.instagram.com/shirleysetia/"
+          className="suggestion__footerFollow"
+        >
           <Button
             size="small"
             //   variant="contained"
             color="secondary"
-            className="suggestion__footerFollow"
           >
             Follow
           </Button>
@@ -91,12 +97,11 @@ function Suggestion() {
         <div className="suggestion__footerContent">
           <h5>durjoydatta</h5>
         </div>
-        <a href="https://www.instagram.com/durjoydatta/">
-          <Button
-            size="small"
-            color="secondary"
-            className="suggestion__footerFollow"
-          >
+        <a
+          href="https://www.instagram.com/durjoydatta/"
+          className="suggestion__footerFollow"
+        >
+          <Button size="small" color="secondary">
             Follow
           </Button>
         </a>
@@ -112,12 +117,11 @@ function Suggestion() {
         <div className="suggestion__footerContent">
           <h5>cristiano</h5>
         </div>
-        <a href="https://www.instagram.com/cristiano/">
-          <Button
-            size="small"
-            color="secondary"
-            className="suggestion__footerFollow"
-          >
+        <a
+          href="https://www.instagram.com/cristiano/"
+          className="suggestion__footerFollow"
+        >
+          <Button size="small" color="secondary">
             Follow
           </Button>
         </a>
@@ -133,12 +137,11 @@ function Suggestion() {
         <div className="suggestion__footerContent">
           <h5>gameofthrones</h5>
         </div>
-        <a href="https://www.instagram.com/gameofthrones/">
-          <Button
-            size="small"
-            color="secondary"
-            className="suggestion__footerFollow"
-          >
+        <a
+          href="https://www.instagram.com/gameofthrones/"
+          className="suggestion__footerFollow"
+        >
+          <Button size="small" color="secondary">
             Follow
           </Button>
         </a>
