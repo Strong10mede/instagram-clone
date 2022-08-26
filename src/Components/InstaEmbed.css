@@ -42,6 +42,10 @@
   font-size: 14px;
 }
 
+.instaEmbed__avatar {
+  transform: translateY(8px);
+}
+
 .instaEmbed__footer {
   display: flex;
   padding-left: 22px;

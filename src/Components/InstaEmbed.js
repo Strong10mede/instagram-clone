@@ -40,11 +40,15 @@ function InstaEmbed() {
         </h4>
       </div>
       <div className="instaEmbed__footer">
-        <Avatar className="avatar" alt="mayur" src="/images/avatar.jpg" />
+        <Avatar
+          className="instaEmbed__avatar"
+          alt="mayur"
+          src="/images/avatar.jpg"
+        />
 
         <div className="instaEmbed__footerContent">
           <h5>Mayur Kumar</h5>
-          <a href="https://www.instagram.com/_the.odist_/">
+          <a href="https://www.instagram.com/mede_mayur/">
             <Button
               variant="contained"
               color="secondary"
