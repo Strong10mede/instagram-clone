@@ -13,7 +13,6 @@ input {
 .app {
   background-color: #fafafa;
   width: 100vw;
-  overflow-x: hidden;
 }
 
 .app__posts {
@@ -157,7 +156,7 @@ input {
   .app__postsRight,
   .app__postsLeft,
   .app__postsCenter {
-    width: 100%;
+    width: 97%;
     margin-left: 5px;
     margin-right: 5px;
     padding: 0;
