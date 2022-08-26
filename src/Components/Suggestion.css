@@ -1,0 +1,66 @@
+.suggestion {
+  width: 360px;
+  background: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  right: 3%;
+  position: absolute;
+  padding-bottom: 25px;
+}
+
+.suggested__image {
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.suggestion h4 {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 0.04rem;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  margin-left: 25px;
+}
+
+.suggesticon__icon {
+  margin-right: 5px;
+}
+
+.suggestion p {
+  width: 85%;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.suggestion__footer {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.suggestion__footerContent {
+  margin-left: 20px;
+}
+
+.suggestion__footerFollow {
+  position: absolute;
+  right: 60px;
+  margin-top: -15px;
+}
+
+.suggestion__footerFollowMain {
+  position: absolute;
+  right: 150px;
+  margin-top: 25px;
+}
